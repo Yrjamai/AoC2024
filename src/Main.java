@@ -1,20 +1,27 @@
+import day2.ReportCheck;
+
 import java.io.IOException;
-import java.util.List;
 
 public class Main {
-    public Main() {
-    }
-
     public static void main(String[] args) throws IOException {
+        /*
+        // Day 1
+
         String filePath = "C:\\MAU\\Advent of Code\\day1\\input";
-        CreateLists numberLists = new CreateLists(filePath);
+        day1.CreateLists numberLists = new day1.CreateLists(filePath);
         List<Integer> leftNumbers = numberLists.getLeftNumbers();
         List<Integer> rightNumbers = numberLists.getRightNumbers();
-        Distance distance = new Distance(leftNumbers, rightNumbers);
+        day1.Distance distance = new day1.Distance(leftNumbers, rightNumbers);
         int totalDistance = distance.calculateTotalDistance();
         System.out.println(totalDistance);
-        Similarities similarities = new Similarities(leftNumbers, rightNumbers);
+        day1.Similarities similarities = new day1.Similarities(leftNumbers, rightNumbers);
         int totalSimilarities = similarities.calculateTotalSimilarities();
         System.out.println(totalSimilarities);
+         */
+
+        // Day 2
+
+        ReportCheck reportCheck = new ReportCheck("reports");
+        System.out.println(reportCheck.getNbrOfSafeReports());
     }
 }
